@@ -80,3 +80,32 @@ nav {
 .footer1 {
   margin-left: 100px;
 }
+
+/* Add animation to marketing services */
+.marketing-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.marketing-container.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.marketing1 h1 {
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #111;
+  padding: 20px;
+  color: white;
+}
+
+.container {
+  min-height: 100vh;
+}
