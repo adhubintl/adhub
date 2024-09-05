@@ -109,3 +109,28 @@ footer {
 .container {
   min-height: 100vh;
 }
+/* General styles for the a tags */
+.menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+/* Pseudo-element for the underline */
+.menu ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease-in-out;
+}
+
+/* Hover effect to animate the underline from left to right */
+.menu ul li a:hover::after {
+  width: 100%;
+}
